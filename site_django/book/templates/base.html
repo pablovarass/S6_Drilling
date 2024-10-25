@@ -1,0 +1,19 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Libros</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body class="hold-transition layout-top-nav">
+    <div class="wrapper">
+        {% include 'navbar.html' %}
+        {% block content %}
+        {% endblock %}
+        {% include 'footer.html' %}
+    </div>
+</body>
+</html>
